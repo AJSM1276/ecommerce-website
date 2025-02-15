@@ -196,12 +196,12 @@
   width: 80%;
   background-color: #212329;
   color: white;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(
     4,
     1fr
   ); /* Adjusted to fit all footer sections */
-  justify-content: center;
+  justify-content: space-around;
   gap: 2rem; /* Adjust gap between footer sections */
   margin: 0 auto;
   padding-bottom: 1rem; /* Add padding to the bottom */

@@ -196,12 +196,12 @@
   width: 80%;
   background-color: #212329;
   color: white;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(
     4,
     1fr
   ); /* Adjusted to fit all footer sections */
-  justify-content: center;
+  justify-content: space-around;
   gap: 2rem; /* Adjust gap between footer sections */
   margin: 0 auto;
   padding-bottom: 1rem; /* Add padding to the bottom */
@@ -320,6 +320,17 @@
   .footer-email-form {
     margin-top: 2rem;
   }
+  .hero h2 {
+    display: none;
+  }
+
+  #sign-up {
+    display: none;
+  }
+
+  #sign-up-btn {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -335,13 +346,57 @@
     display: none;
   }
 
+  .footer-email-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    display: none;
+  }
+
+  #sign-up {
+    display: none;
+  }
+
+  #sign-up-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .footer-3 {
+    display: none;
+  }
+
+  .footer-4 {
+    display: none;
+  }
+
   .footer-1 {
     display: none;
   }
 
-  .footer-email-form {
-    margin-top: 2rem;
+  .footer-3 {
+    display: none;
   }
+
+  .footer-email-form {
+    display: none;
+  }
+
+  .hero h2 {
+    display: none;
+  }
+
+  #sign-up {
+    display: none;
+  }
+
+  #sign-up-btn {
+    display: none;
+  }
+
 }
 
 /*THIS IS THE BASE CSS--------------------------------------------------------*/
@@ -445,7 +500,7 @@
   background-color: var(--brightred);
   padding: 6px 16px;
   border-radius: 4px;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
 }
 
 .piano-hero .hero-btns:hover {
