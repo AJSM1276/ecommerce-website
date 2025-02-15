@@ -417,6 +417,7 @@
   padding: 10px 10%;
   color: white;
   background-size: cover;
+  background-position: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
     url("../images/pianohero.jpg");
 }
