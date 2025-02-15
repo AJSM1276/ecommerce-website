@@ -85,114 +85,104 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .footer-email-form {
-    margin-top: 4rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .footer {
-    padding-top: 2rem;
+  .nav-container {
+    position: relative;
   }
 
-  .footer-4 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .footer-3 {
-    display: none;
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-out;
+    background: white;
   }
 
-  .footer-4 {
-    display: none;
+  .nav-menu {
+    display: grid;
+    grid-template-columns: auto;
+    background: var(--brightred);
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
   }
 
-  .footer-3 {
-    display: none;
+  #navbar-logo {
+    margin-left: 20px;
   }
 
-  .footer-email-form {
-    margin-top: 2rem;
-  }
-  .hero h2 {
-    display: none;
-  }
-
-  #sign-up {
-    display: none;
+  .nav-menu.active {
+    background: var(--darkgray);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
   }
 
-  #sign-up-btn {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .footer-3 {
-    display: none;
+  .nav-links {
+    text-align: center;
+    line-height: 60px;
+    width: 100%;
+    display: table;
   }
 
-  .footer-4 {
-    display: none;
+  .nav-links:hover {
+    background-color: var(--brightred);
+    color: var(--white);
+    transition: all 0.4s ease-out;
   }
 
-  .footer-3 {
-    display: none;
+  .navbar {
+    width: 100%;
   }
 
-  .footer-email-form {
-    display: flex;
-    flex-direction: column;
+  .nav-links-btn {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    background-color: var(--darkgray);
+    color: var(--white);
+    transition: all 0.4s ease-out;
   }
 
-  .hero h2 {
-    display: none;
+  .nav-links-btn:hover {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    background-color: var(--brightred);
+    color: var(--white);
+    transition: all 0.4s ease-out;
   }
 
-  #sign-up {
-    display: none;
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
   }
 
-  #sign-up-btn {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 250px) {
-  .footer-3 {
-    display: none;
+  .menu-toggle .bar {
+    display: block;
+    cursor: pointer;
   }
 
-  .footer-4 {
-    display: none;
+  .menu-toggle:hover {
+    cursor: pointer;
   }
 
-  .footer-1 {
-    display: none;
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
   }
 
-  .footer-3 {
-    display: none;
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
   }
 
-  .footer-email-form {
-    display: none;
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
-
-  .hero h2 {
-    display: none;
-  }
-
-  #sign-up {
-    display: none;
-  }
-
-  #sign-up-btn {
-    display: none;
-  }
-
 }
 
 /*------------------------------------------------------------------------------------------------------------*/
@@ -330,6 +320,17 @@
   .footer-email-form {
     margin-top: 2rem;
   }
+  .hero h2 {
+    display: none;
+  }
+
+  #sign-up {
+    display: none;
+  }
+
+  #sign-up-btn {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -345,13 +346,57 @@
     display: none;
   }
 
+  .footer-email-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    display: none;
+  }
+
+  #sign-up {
+    display: none;
+  }
+
+  #sign-up-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .footer-3 {
+    display: none;
+  }
+
+  .footer-4 {
+    display: none;
+  }
+
   .footer-1 {
     display: none;
   }
 
-  .footer-email-form {
-    margin-top: 2rem;
+  .footer-3 {
+    display: none;
   }
+
+  .footer-email-form {
+    display: none;
+  }
+
+  .hero h2 {
+    display: none;
+  }
+
+  #sign-up {
+    display: none;
+  }
+
+  #sign-up-btn {
+    display: none;
+  }
+
 }
 
 /*THIS IS THE BASE CSS--------------------------------------------------------*/
