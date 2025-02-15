@@ -406,3 +406,97 @@
   margin-top: 10px;
   display: block;
 }
+
+.piano-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 10px 10%;
+  color: white;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("../images/pianohero.jpg");
+}
+
+.piano-hero h1 {
+  margin-top: 30px;
+  font-size: 120px;
+  text-align: center;
+}
+
+.piano-hero p {
+  margin: 10px 0 50px;
+  font-size: 1.7rem;
+}
+
+.piano-hero .hero-btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.piano-hero .hero-btns {
+  background-color: var(--brightred);
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 2.5rem;
+}
+
+.piano-hero .hero-btns:hover {
+  background-color: #337af1;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+
+.piano-hero a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .piano-hero .hero-btn-container {
+    flex-direction: row;
+  }
+
+  .piano-hero h1 {
+    text-align: center;
+    font-size: 100px;
+  }
+
+  .piano-hero p {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .piano-hero .hero-btns {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .piano-hero .hero-btn-container {
+    flex-direction: column;
+  }
+
+  .piano-hero h1 {
+    text-align: center;
+    font-size: 80px;
+  }
+
+  .piano-hero p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .piano-hero .hero-btns {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
