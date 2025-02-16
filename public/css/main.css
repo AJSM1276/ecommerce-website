@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
   --darkgray: #212329;
   --brightred: #f9423d;
@@ -9,7 +10,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-container {
@@ -294,7 +295,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .footer {
     padding-top: 2rem;
   }
@@ -304,16 +305,12 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .footer-3 {
     display: none;
   }
 
   .footer-4 {
-    display: none;
-  }
-
-  .footer-3 {
     display: none;
   }
 
@@ -333,16 +330,12 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 425px) {
   .footer-3 {
     display: none;
   }
 
   .footer-4 {
-    display: none;
-  }
-
-  .footer-3 {
     display: none;
   }
 
@@ -364,7 +357,7 @@
   }
 }
 
-@media screen and (max-width: 250px) {
+@media screen and (max-width: 300px) {
   .footer-3 {
     display: none;
   }
@@ -396,7 +389,6 @@
   #sign-up-btn {
     display: none;
   }
-
 }
 
 /*THIS IS THE BASE CSS--------------------------------------------------------*/
@@ -468,19 +460,29 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   padding: 10px 10%;
   color: white;
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
-    url("../images/pianohero.jpg");
+    url("../images/dwaspic.jpg");
+}
+
+
+.piano-hero p span {
+  color: white;
+  font-style: italic;
 }
 
 .piano-hero h1 {
   margin-top: 30px;
-  font-size: 180px;
+  font-size: 100px;
   text-align: center;
+}
+
+.piano-hero span {
+  color: var(--brightred);
 }
 
 .piano-hero p {
@@ -523,7 +525,7 @@
 
   .piano-hero h1 {
     text-align: center;
-    font-size: 160px;
+    font-size: 75px;
   }
 
   .piano-hero p {
@@ -544,7 +546,7 @@
 
   .piano-hero h1 {
     text-align: center;
-    font-size: 140px;
+    font-size: 60px;
   }
 
   .piano-hero p {
@@ -565,7 +567,7 @@
 
   .piano-hero h1 {
     text-align: center;
-    font-size: 120px;
+    font-size: 55px;
   }
 
   .piano-hero p {
@@ -586,28 +588,7 @@
 
   .piano-hero h1 {
     text-align: center;
-    font-size: 100px;
-  }
-
-  .piano-hero p {
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  .piano-hero .hero-btns {
-    text-align: center;
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .piano-hero .hero-btn-container {
-    flex-direction: row;
-  }
-
-  .piano-hero h1 {
-    text-align: center;
-    font-size: 100px;
+    font-size: 40px;
   }
 
   .piano-hero p {
@@ -628,17 +609,17 @@
 
   .piano-hero h1 {
     text-align: center;
-    font-size: 80px;
+    font-size: 35px;
   }
 
   .piano-hero p {
     text-align: center;
-    font-size: 1rem;
+    font-size: .8rem;
   }
 
   .piano-hero .hero-btns {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 /* continue here */
@@ -650,27 +631,7 @@
 
   .piano-hero h1 {
     text-align: center;
-    font-size: 60px;
-  }
-
-  .piano-hero p {
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  .piano-hero .hero-btns {
-    text-align: center;
-    font-size: 1.1rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .piano-hero .hero-btn-container {
-    flex-direction: row;
-  }
-
-  .piano-hero h1 {
-    text-align: center;
-    font-size: 60px;
+    font-size: 30px;
   }
 
   .piano-hero p {
@@ -680,7 +641,27 @@
 
   .piano-hero .hero-btns {
     text-align: center;
-    font-size: .9rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .piano-hero .hero-btn-container {
+    flex-direction: row;
+  }
+
+  .piano-hero h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .piano-hero p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .piano-hero .hero-btns {
+    text-align: center;
+    font-size: 0.9rem;
   }
 }
 /* Smaller mobile */
@@ -696,11 +677,11 @@
 
   .piano-hero p {
     text-align: center;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .piano-hero .hero-btns {
     text-align: center;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
