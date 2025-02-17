@@ -432,7 +432,7 @@ body {
   }
 
   .moving-text {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -441,7 +441,7 @@ body {
   }
 
   .moving-text {
-    font-size: 9px;
+    font-size: 8px;
   }
 }
 /* Smaller mobile */
@@ -451,6 +451,6 @@ body {
   }
 
   .moving-text {
-    font-size: 8px;
+    font-size: 7px;
   }
 }
