@@ -20,7 +20,7 @@ var typed = new Typed(".typingp", {
   strings: [
     "Eight years of experience in just a few lessons!",
     "Prefer personalized training? Try Tutoring!",
-    "No available time? Try our flexible online course!",
+    "No available time? Try my flexible online course!",
   ],
   typeSpeed: 20,
   backSpeed: 40,
