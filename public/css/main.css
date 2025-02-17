@@ -52,6 +52,7 @@
   text-align: center;
   width: 70%;
   justify-self: end;
+  z-index: 9999;
 }
 
 .nav-links {
@@ -502,6 +503,7 @@
   padding: 6px 16px;
   border-radius: 4px;
   font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .piano-hero .hero-btns:hover {
@@ -708,40 +710,39 @@
 /* Moving container section */
 .moving-text-container {
   width: 100%;
-      overflow: hidden;
-      white-space: nowrap;
-      background: #f9433da2;
-      padding: 10px 0;
-      position: relative;
-
+  overflow: hidden;
+  white-space: nowrap;
+  background: #f9433d88;
+  padding: 10px 0;
+  position: relative;
 }
 
 .moving-text {
   display: inline-block;
   white-space: nowrap;
-  animation: marquee 15s linear infinite;
-  color: #fff;
-  font-size: 12px;
+  animation: marquee 25s linear infinite;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 @keyframes marquee {
   from {
-    transform: translateX(-100%);
+    transform: translateX(0%);
   }
   to {
-    transform: translateX(100%);
+    transform: translateX(-50%);
   }
 }
 /* About Section */
 body {
-  background-color:#212329;
+  background-color: #212329;
 }
 .about {
   background: #2b2b2b;
   padding: 20px;
   width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   margin: 40px;
@@ -756,7 +757,7 @@ body {
 /* Hover effect: move up slightly and enhance the shadow */
 .about:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Optional: styling for headings and text */
