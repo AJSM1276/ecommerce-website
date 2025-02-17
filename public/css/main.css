@@ -476,7 +476,7 @@
 
 .piano-hero h1 {
   margin-top: 30px;
-  font-size: 120px;
+  font-size: 95px;
   text-align: center;
 }
 
@@ -704,4 +704,68 @@
     text-align: center;
     font-size: 0.8rem;
   }
+}
+/* Moving container section */
+.moving-text-container {
+  width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      background: #f9433da2;
+      padding: 10px 0;
+      position: relative;
+
+}
+
+.moving-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+  color: #fff;
+  font-size: 12px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+/* About Section */
+body {
+  background-color:#212329;
+}
+.about {
+  background: #2b2b2b;
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  margin: 40px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hover effect: move up slightly and enhance the shadow */
+.about:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Optional: styling for headings and text */
+.about h2 {
+  margin-top: 0;
+  color: #ffffff;
+  text-decoration: un;
+}
+.about p {
+  margin-top: 0;
+  color: rgb(255, 255, 255);
 }
