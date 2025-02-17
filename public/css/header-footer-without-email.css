@@ -38,6 +38,7 @@
 #navbar-logo a {
   color: var(--white);
   text-decoration: none; /* Remove underline */
+  transition: all 0.4s ease-out;
 }
 
 #navbar-logo a:hover {
@@ -57,6 +58,7 @@
 .nav-links {
   color: white;
   text-decoration: none;
+  transition: all 0.4s ease-out;
 }
 
 .nav-links:hover {
@@ -218,6 +220,7 @@
   margin-bottom: 0.5rem;
   position: relative;
   display: inline-flex; /* Ensure the underline matches the text width */
+  transition: all 0.4s ease-out;
 }
 
 .footer-heading a::after {
@@ -229,11 +232,11 @@
   bottom: -2px; /* Position the underline below the text */
   left: 0;
   background: var(--brightred);
-  transition: width 0.4s ease;
 }
 
 .footer-heading a:hover::after {
   width: 100%;
+  transition: all 0.4s ease-out;
 }
 
 .footer-heading a:hover {
@@ -313,7 +316,23 @@
   .footer-4 {
     display: none;
   }
+
+  .footer-3 {
+    display: none;
+  }
+
+  .footer-email-form {
+    margin-top: 2rem;
+  }
   .hero h2 {
+    display: none;
+  }
+
+  #sign-up {
+    display: none;
+  }
+
+  #sign-up-btn {
     display: none;
   }
 }
@@ -327,7 +346,24 @@
     display: none;
   }
 
+  .footer-3 {
+    display: none;
+  }
+
+  .footer-email-form {
+    display: flex;
+    flex-direction: column;
+  }
+
   .hero h2 {
+    display: none;
+  }
+
+  #sign-up {
+    display: none;
+  }
+
+  #sign-up-btn {
     display: none;
   }
 }
@@ -348,5 +384,22 @@
   .footer-3 {
     display: none;
   }
+
+  .footer-email-form {
+    display: none;
+  }
+
+  .hero h2 {
+    display: none;
+  }
+
+  #sign-up {
+    display: none;
+  }
+
+  #sign-up-btn {
+    display: none;
+  }
 }
+
 /*THIS IS THE BASE CSS--------------------------------------------------------*/

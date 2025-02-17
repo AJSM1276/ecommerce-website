@@ -1,64 +1,3 @@
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 2rem 0; /* Reduce padding */
-  color: white;
-}
-
-.hero h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.hero form {
-  display: flex;
-  flex-direction: row; /* Change to row to align items horizontally */
-  align-items: center;
-  justify-content: center;
-}
-
-#sign-up {
-  width: 250px;
-  height: 40px;
-  border-radius: 4px;
-  outline: none;
-  border: none;
-  padding-left: 0.5rem;
-  font-size: 1rem;
-  margin-right: 1rem; /* Add margin to the right to space out the button */
-}
-
-#sign-up::placeholder {
-  color: #b1b1b1;
-}
-
-#sign-up-btn {
-  width: 100px;
-  height: 40px;
-  border-radius: 4px;
-  background-color: #f9423d;
-  outline: none;
-  border: none;
-  color: white;
-  font-size: 1rem;
-  margin-left: 0;
-}
-
-#sign-up-btn:hover {
-  cursor: pointer;
-  background-color: #337af1;
-  transition: all 0.4s ease-out;
-}
-
-.sign-up-disappear {
-  color: white;
-  margin-top: 10px;
-  display: block;
-}
-
 .piano-hero {
   display: flex;
   flex-direction: column;
@@ -108,6 +47,7 @@
   border-radius: 4px;
   font-size: 1.8rem;
   font-weight: 500;
+  transition: all 0.4s ease-out;
 }
 
 .piano-hero .hero-btns:hover {
@@ -115,6 +55,7 @@
   color: var(--white);
   cursor: pointer;
   transition: all 0.4s ease-out;
+  transform: translateY(-10px);
 }
 
 .piano-hero a {
@@ -341,7 +282,7 @@
 body {
   background-color: #212329;
 }
-.about {
+/* .about {
   background: #2b2b2b;
   padding: 20px;
   width: 100%;
@@ -358,13 +299,13 @@ body {
   align-items: center;
 }
 
-/* Hover effect: move up slightly and enhance the shadow */
 .about:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #2e2e2e;
+  transition: all 0.4s ease-out;
 }
 
-/* Optional: styling for headings and text */
 .about h2 {
   margin-top: 0;
   color: #ffffff;
@@ -373,7 +314,7 @@ body {
 .about p {
   margin-top: 0;
   color: rgb(255, 255, 255);
-}
+} */
 
 @media screen and (max-width: 1280px) {
   .moving-text-container {
@@ -402,7 +343,6 @@ body {
 
   .moving-text {
     font-size: 13px;
-    color: aqua;
   }
 }
 /* Smaller tablets */
@@ -413,7 +353,6 @@ body {
 
   .moving-text {
     font-size: 12px;
-    color: black;
   }
 }
 /* Test */
@@ -425,7 +364,6 @@ body {
 
   .moving-text {
     font-size: 11px;
-    color: blue;
   }
 }
 /* continue here */
@@ -437,7 +375,6 @@ body {
 
   .moving-text {
     font-size: 9px;
-    color: green;
   }
 }
 @media screen and (max-width: 400px) {
@@ -447,7 +384,6 @@ body {
 
   .moving-text {
     font-size: 8px;
-    color: yellow;
   }
 }
 /* Smaller mobile */
@@ -459,4 +395,94 @@ body {
   .moving-text {
     font-size: 7px;
   }
+}
+/* What You Can Expect From Me */
+.what-to-expect h2 {
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  font-size: 40px;
+}
+.expectation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expectation {
+  background: #2e2e2e;
+  padding: 20px;
+  width: 20%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  margin: 40px;
+  transition: all 0.4s ease-out;
+}
+
+.expectation h3 {
+  margin-top: 0;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.expectation p {
+  color: #ffffff;
+  font-size: 15pxpx;
+}
+
+.expectation:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #f9433d88;
+  transition: all 0.4s ease-out;
+}
+
+.what-to-expect a {
+  color: #f9433d;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+}
+
+.what-to-expect a:hover {
+  transform: translateY(-10px);
+  color: #337af1;
+  transition: all 0.4s ease-out;
+}
+
+.expectation img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.what-to-expect-all h2 {
+  margin: 30px 50px 0px 50px;
+}
+
+@media screen and (max-width: 1280px) {
+}
+/* Avg. tablet sizes */
+@media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 860px) {
+}
+/* Smaller tablets */
+@media screen and (max-width: 768px) {
+}
+/* Test */
+
+@media screen and (max-width: 590px) {
+}
+/* continue here */
+/* Avg mobile */
+@media screen and (max-width: 500px) {
+}
+@media screen and (max-width: 400px) {
+}
+/* Smaller mobile */
+@media screen and (max-width: 360px) {
 }
