@@ -51,7 +51,7 @@
 }
 
 .piano-hero .hero-btns:hover {
-  background-color: #337af1;
+  background-color: cornflowerblue;
   color: var(--white);
   cursor: pointer;
   transition: all 0.4s ease-out;
@@ -443,12 +443,14 @@ body {
   color: #f9433d;
   cursor: pointer;
   text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
   transition: all 0.4s ease-out;
 }
 
 .what-to-expect a:hover {
   transform: translateY(-10px);
-  color: #337af1;
+  color: cornflowerblue;
   transition: all 0.4s ease-out;
 }
 
@@ -460,18 +462,31 @@ body {
 
 .what-to-expect-all h2 {
   margin: 30px 50px 0px 50px;
+  font-size: 60px;
 }
 
 @media screen and (max-width: 1280px) {
+  .what-to-expect-all h2 {
+    font-size: 30px;
+  }
 }
 /* Avg. tablet sizes */
 @media screen and (max-width: 1000px) {
+  .what-to-expect-all h2 {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 860px) {
+  .what-to-expect-all h2 {
+    font-size: 20px;
+  }
 }
 /* Smaller tablets */
 @media screen and (max-width: 768px) {
+  .what-to-expect-all h2 {
+    font-size: 20px;
+  }
 }
 /* Test */
 

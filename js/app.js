@@ -27,3 +27,4 @@ var typed = new Typed(".typingp", {
   loop: true,
   backDelay: 2500,
 });
+

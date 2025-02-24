@@ -62,7 +62,7 @@
 
 #sign-up-btn:hover {
   cursor: pointer;
-  background-color: #337af1;
+  background-color: cornflowerblue;
   transition: all 0.4s ease-out;
 }
 

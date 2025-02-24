@@ -72,7 +72,7 @@
 }
 
 .nav-links-btn:hover {
-  background-color: #337af1;
+  background-color: cornflowerblue;
   color: var(--white);
   cursor: pointer;
   transition: all 0.4s ease-out;
@@ -286,7 +286,7 @@
 
 #footer-email-btn:hover {
   cursor: pointer;
-  background-color: #337af1;
+  background-color: cornflowerblue;
   transition: all 0.4s ease-out;
 }
 
@@ -393,5 +393,3 @@
 }
 
 /*THIS IS THE BASE CSS--------------------------------------------------------*/
-
-
