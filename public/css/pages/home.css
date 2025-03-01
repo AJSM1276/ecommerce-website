@@ -228,7 +228,7 @@
 
   .piano-hero .hero-btns {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 /* Smaller mobile */
@@ -429,7 +429,7 @@ body {
 
 .expectation p {
   color: #ffffff;
-  font-size: 15pxpx;
+  font-size: 15px;
 }
 
 .expectation:hover {
@@ -465,39 +465,77 @@ body {
   font-size: 60px;
 }
 
+/* optimizing for sections */
+
 @media screen and (max-width: 1280px) {
   .what-to-expect-all h2 {
     font-size: 30px;
+  }
+  .what-to-expect-all h3 {
+    font-size: 20px;
   }
 }
 /* Avg. tablet sizes */
 @media screen and (max-width: 1000px) {
   .what-to-expect-all h2 {
-    font-size: 25px;
+    font-size: 29px;
+  }
+  .what-to-expect-all h3 {
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 860px) {
   .what-to-expect-all h2 {
-    font-size: 20px;
+    font-size: 28px;
+  }
+  .what-to-expect-all h3 {
+    font-size: 17px;
   }
 }
 /* Smaller tablets */
 @media screen and (max-width: 768px) {
   .what-to-expect-all h2 {
-    font-size: 20px;
+    font-size: 24px;
+  }
+  .what-to-expect-all h3 {
+    font-size: 17px;
+  }
+  /* here */
+  .what-to-expect .expectation-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .expectation {
+    width: 40%;
+    height: 50%;
   }
 }
-/* Test */
 
 @media screen and (max-width: 590px) {
+  .what-to-expect-all h2 {
+    font-size: 20px;
+  }
+  .what-to-expect-all h3 {
+    font-size: 14px;
+  }
 }
 /* continue here */
 /* Avg mobile */
 @media screen and (max-width: 500px) {
+  .what-to-expect-all h2 {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 400px) {
+  .what-to-expect-all h2 {
+    font-size: 16px;
+  }
 }
 /* Smaller mobile */
 @media screen and (max-width: 360px) {
+  .what-to-expect-all h2 {
+    font-size: 14px;
+  }
 }
